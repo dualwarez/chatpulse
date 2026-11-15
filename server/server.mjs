@@ -4,8 +4,8 @@ import express from 'express';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const APP_KEY = '6tnym1br6iaf7';
-const APP_SECRET = '5ljIzEkWb2vK8M';
+const APP_KEY = process.env.APP_KEY || '6tnym1br6iaf7';
+const APP_SECRET = process.env.APP_SECRET || '';
 const API_HOST = 'https://api.sg-light-api.com';
 const PORT = process.env.PORT || 8787;
 
